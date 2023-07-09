@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// import Api from "./api/Api";
+import { UseStateComp } from "./UseStateComp/UseStateComp";
+import Array from "./array/Array";
+import Header from "./header/Header";
+import InputValue from "./inputValue/InputValue";
+import { Plan } from "./main/Plan";
+import ApiUsers from "./apiUsers/ApiUsers";
 
 function App() {
+  const jack = "Jack"
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div > 
+      <Header />
+     <p> Welcome {jack}</p>
+     <Plan/>
+     <hr></hr>
+     <UseStateComp/>
+     <hr></hr>
+     <InputValue/>
+     <hr></hr>
+     <Array/>
+     <hr/>
+     {/* <Api/> */}
+     <hr/>
+     <ApiUsers/>
     </div>
   );
 }

@@ -1,0 +1,11 @@
+.sqr {
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+}
+.sqrFalse {
+    background-color: rgb(234, 141, 26);
+    width: 200px;
+    height: 200px;
+
+}
